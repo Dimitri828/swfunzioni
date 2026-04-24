@@ -66,22 +66,24 @@
 
 
 function cifre(number) {
-    if (number<100) {
-        console.log(`Il ${number} ha 1 cifra`);
+    if (number<10) {
+        return `Il ${number} ha 1 cifra`;
+    }else if (number<100) {
+       return `Il ${number} ha 2 cifra`;
         
     }else if(number<1000){
-        console.log(`Il ${number} ha 2 cifre`);
+       return `Il ${number} ha  3cifre`;
         
     }else if(number<10000){
-        console.log(`Il ${number} ha 3 cifre`);
+       return `Il ${number} ha 4 cifre`;
         
     }else{
-        console.log(`Il ${number} ha troppe cifre`);
+       return `Il ${number} ha troppe cifre`;
         
     }
 
 }
 
-let cifra =cifre(10750);
+let cifra =cifre(1);
 console.log(cifra);
 
