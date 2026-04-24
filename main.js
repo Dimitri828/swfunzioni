@@ -82,6 +82,6 @@ function cifre(number) {
 
 }
 
-let cifra =cifre(10750)
+let cifra =cifre(10750);
 console.log(cifra);
 
