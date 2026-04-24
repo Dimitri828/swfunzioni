@@ -40,23 +40,48 @@
 
 // SW FUNZIONI 2
 
-function conta(n) {
-    let count=1
-    for (let i = 1; i <= n; i++) {
-        // console.log(i);
+// function conta(n) {
+//     // let count=1
+//     for (let i = 1; i <= n; i++) {
         
-        count=i
-        if (count % 15 ==0) {
-            count="fizzbuzz"
-        }else if (count % 5 ==0) {
-            count="buzz"
-        }else if (count % 3 ==0) {
-            count="fizz"
-        }
-        console.log(count);
+//         let count=i
+//         if (count % 15 ==0) {
+//             count="fizzbuzz"
+//         }else if (count % 5 ==0) {
+//             count="buzz"
+//         }else if (count % 3 ==0) {
+//             count="fizz"
+//         }
+//         console.log(count);
+        
+//     }
+
+    
+// }
+// conta(15)
+// conta(30)
+
+
+// SELFWORK funzioni 3
+
+
+function cifre(number) {
+    if (number<100) {
+        console.log(`Il ${number} ha 1 cifra`);
+        
+    }else if(number<1000){
+        console.log(`Il ${number} ha 2 cifre`);
+        
+    }else if(number<10000){
+        console.log(`Il ${number} ha 3 cifre`);
+        
+    }else{
+        console.log(`Il ${number} ha troppe cifre`);
         
     }
 
-    
 }
-conta(15)
+
+let cifra =cifre(10750)
+console.log(cifra);
+
