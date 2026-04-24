@@ -1,37 +1,62 @@
 // Selfwork funzioni 1
-let shoot = Number(prompt("Quanti round desiderate fare?"));
+// let shoot = Number(prompt("Quanti round desiderate fare?"));
 
-function game(number) {
-    let punteggioP1= 0; 
-    let punteggioP2=0;
-    for (let i = 1; i <= number; i++) {
+// function game(number) {
+//     let punteggioP1= 0; 
+//     let punteggioP2=0;
+//     for (let i = 1; i <= number; i++) {
        
         
-        let tiro =  Math.floor(Math.random() * (6 - 1) + 1)
-        // console.log(tiro);
+//         let tiro =  Math.floor(Math.random() * (6 - 1) + 1)
+//         // console.log(tiro);
         
-        punteggioP1 += tiro;
+//         punteggioP1 += tiro;
       
-        console.log(punteggioP1);
-    };
+//         console.log(punteggioP1);
+//     };
     
-    for (let i = 1; i <= number; i++) {
+//     for (let i = 1; i <= number; i++) {
        
         
-        let tiro =  Math.floor(Math.random() * (6 - 1) + 1)
-        // console.log(tiro);
+//         let tiro =  Math.floor(Math.random() * (6 - 1) + 1)
+//         // console.log(tiro);
         
-        punteggioP2 += tiro;
+//         punteggioP2 += tiro;
       
-        console.log(punteggioP2);
-    }
-     if ((punteggioP1 - punteggioP2)>0) {
-        return `Player 1 win score:${punteggioP1}`
-    }else{
-        return `Player 2 win score:${punteggioP2}`
-    };
-};
+//         console.log(punteggioP2);
+//     }
+//      if ((punteggioP1 - punteggioP2)>0) {
+//         return `Player 1 win score:${punteggioP1}`
+//     }else{
+//         return `Player 2 win score:${punteggioP2}`
+//     };
+// };
 
         
-let winner = game(shoot);
-console.log(winner);
+// let winner = game(shoot);
+// console.log(winner);
+
+
+
+// SW FUNZIONI 2
+
+function conta(n) {
+    let count=1
+    for (let i = 1; i <= n; i++) {
+        // console.log(i);
+        
+        count=i
+        if (count % 15 ==0) {
+            count="fizzbuzz"
+        }else if (count % 5 ==0) {
+            count="buzz"
+        }else if (count % 3 ==0) {
+            count="fizz"
+        }
+        console.log(count);
+        
+    }
+
+    
+}
+conta(15)
