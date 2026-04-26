@@ -65,25 +65,44 @@
 // SELFWORK funzioni 3
 
 
-function cifre(number) {
-    if (number<10) {
-        return `Il ${number} ha 1 cifra`;
-    }else if (number<100) {
-       return `Il ${number} ha 2 cifra`;
+// function cifre(number) {
+//     if (number<10) {
+//         return `Il ${number} ha 1 cifra`;
+//     }else if (number<100) {
+//        return `Il ${number} ha 2 cifra`;
         
-    }else if(number<1000){
-       return `Il ${number} ha  3cifre`;
+//     }else if(number<1000){
+//        return `Il ${number} ha  3cifre`;
         
-    }else if(number<10000){
-       return `Il ${number} ha 4 cifre`;
+//     }else if(number<10000){
+//        return `Il ${number} ha 4 cifre`;
         
-    }else{
-       return `Il ${number} ha troppe cifre`;
+//     }else{
+//        return `Il ${number} ha troppe cifre`;
         
-    }
+//     }
 
+// }
+
+// let cifra =cifre(1);
+// console.log(cifra);
+
+// SELFWORK FUNZIONI 4
+
+function palindromo(string) {
+    
+    if (string.replace(/\W/g,"") == string.split("").reverse().join("").replace(/\W/g,"")) {
+        return "True"
+    }else{
+        return "False"
+    }
 }
 
-let cifra =cifre(1);
-console.log(cifra);
+let dromo = palindromo("la vita è bella")
+console.log(dromo);
 
+let pal = palindromo("i topi non avevano nipoti")
+console.log(pal);
+
+
+    
